@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chief AI Officer by Brian Pajares</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#474649",
+                        "secondary": "#c8c6c8",
+                        "tertiary-fixed-dim": "#c8c5cb",
+                        "on-secondary-fixed-variant": "#474649",
+                        "tertiary-container": "#b4b2b7",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-tint": "#e9c349",
+                        "primary-fixed": "#ffe088",
+                        "tertiary-fixed": "#e4e1e7",
+                        "background": "#051424",
+                        "surface": "#051424",
+                        "error": "#ffb4ab",
+                        "primary-container": "#d4af37",
+                        "on-error-container": "#ffdad6",
+                        "surface-container": "#122131",
+                        "secondary-fixed-dim": "#c8c6c8",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-error": "#690005",
+                        "inverse-primary": "#735c00",
+                        "on-background": "#d4e4fa",
+                        "surface-dim": "#051424",
+                        "tertiary": "#d0cdd3",
+                        "outline-variant": "#4d4635",
+                        "surface-container-high": "#1c2b3c",
+                        "on-tertiary-container": "#454449",
+                        "surface-container-low": "#0d1c2d",
+                        "inverse-surface": "#d4e4fa",
+                        "on-secondary-container": "#b7b4b7",
+                        "surface-container-highest": "#273647",
+                        "inverse-on-surface": "#233143",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#47464b",
+                        "on-secondary": "#313032",
+                        "on-primary-fixed-variant": "#574500",
+                        "secondary-fixed": "#e5e1e4",
+                        "on-primary-container": "#554300",
+                        "on-tertiary-fixed": "#1b1b1f",
+                        "primary": "#f2ca50",
+                        "on-secondary-fixed": "#1b1b1d",
+                        "surface-bright": "#2c3a4c",
+                        "on-primary": "#3c2f00",
+                        "on-tertiary": "#303034",
+                        "surface-variant": "#273647",
+                        "surface-container-lowest": "#010f1f",
+                        "error-container": "#93000a",
+                        "outline": "#99907c",
+                        "on-surface": "#d4e4fa"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        gutter: "24px",
+                        base: "8px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "margin-desktop": "80px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Manrope"],
+                        "headline-sm": ["Newsreader"],
+                        "button": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "display-lg": ["Newsreader"],
+                        "headline-md": ["Newsreader"],
+                        "body-md": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "display-xl": ["Newsreader"]
+                    },
+                    fontSize: {
+                        "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "400" }],
+                        "button": ["14px", { lineHeight: "1.0", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "1.7", fontWeight: "400" }],
+                        "display-lg": ["56px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "500" }],
+                        "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "body-sm": ["14px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "display-xl": ["72px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(5, 20, 36, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .glass-card-premium {
+            background: rgba(5, 20, 36, 0.7);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid #D4AF37;
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            border-left: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        .inner-glow {
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 border-b border-amber-500/20 bg-neutral-950/80 backdrop-blur-xl shadow-2xl shadow-black/40">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-bold tracking-tighter text-amber-500 font-serif">
+                CHIEF AI OFFICER
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-neutral-400 hover:text-neutral-100 font-serif text-sm tracking-wide hover:text-amber-400 transition-all duration-300" href="#problem">Problema</a>
+<a class="text-neutral-400 hover:text-neutral-100 font-serif text-sm tracking-wide hover:text-amber-400 transition-all duration-300" href="#methodology">Metodología</a>
+<a class="text-neutral-400 hover:text-neutral-100 font-serif text-sm tracking-wide hover:text-amber-400 transition-all duration-300" href="#chapters">Capítulos</a>
+<a class="text-neutral-400 hover:text-neutral-100 font-serif text-sm tracking-wide hover:text-amber-400 transition-all duration-300" href="#magnet">Capítulo Gratis</a>
+<a class="text-neutral-400 hover:text-neutral-100 font-serif text-sm tracking-wide hover:text-amber-400 transition-all duration-300" href="#contacto">Contacto</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-container font-button text-button px-6 py-3 rounded hover:scale-[1.02] active:scale-[0.98] transition-transform inner-glow" href="#buy">
+                Buy on Amazon
+            </a>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-surface-container-high via-background to-background -z-10"></div>
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-8 z-10">
+<h1 class="font-display-xl text-display-xl text-on-surface">
+                        Conviértete en el líder que transforma <span class="text-primary-container">inteligencia artificial</span> en ventaja competitiva real
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        La guía definitiva para convertir IA en estrategia, gobierno y ROI.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-button text-button px-8 py-4 rounded hover:scale-[1.02] active:scale-[0.98] transition-transform inner-glow" href="#buy">
+                            Comprar en Amazon
+                        </a>
+<a class="inline-flex items-center justify-center bg-transparent border border-primary-container text-primary-container font-button text-button px-8 py-4 rounded hover:bg-primary-container/10 transition-colors" href="#magnet">
+                            Descargar Capítulo 1
+                        </a>
+</div>
+</div>
+<div class="relative z-10 hidden md:block">
+<!-- Placeholder for 3D Book Mockup -->
+<div class="w-full h-[600px] bg-surface-container-high/50 rounded-lg border border-outline-variant/30 flex items-center justify-center overflow-hidden">
+<img alt="3D rendering of the Chief AI Officer book on a dark minimalist pedestal with subtle dramatic lighting" class="object-cover w-full h-full opacity-80 mix-blend-luminosity" data-alt="3D rendering of the Chief AI Officer book on a dark minimalist pedestal with subtle dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXiVA2zb847RVazGYzgmIubeh46ZWYWsJ8wklGB3NF_nBt-qrJGvII83glDedCQ5A7Bwpndk44toAfgMoPRHztYn1LSka84zufDpowPIRSO0r8sHOCJuLG2jpjAzdE7-LZBo8TtQ8MmfrkCs3V-Ck6SGwxCkfpKV8fbavhnZ4UTWAEAvB0LmPaBhVhs7au1c6biiI677FWOVi4h2GVxbBKx-f04Ki_p_8hQ-MVVmNTUbQOubO2P5Xhz2fJl9tStbliHxtghKxYB0U"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="problem">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Muchas empresas hablan de IA. Muy pocas saben convertirla en valor real.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">El entusiasmo inicial por la IA generativa a menudo se desvanece frente a la realidad de la implementación corporativa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Cards -->
+<div class="glass-card p-8 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="rocket" data-weight="fill">rocket</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pilotos sin Escala</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Proyectos prometedores que se estancan en la prueba de concepto y nunca llegan a producción.</p>
+</div>
+<div class="glass-card p-8 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="gavel" data-weight="fill">gavel</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Falta de Gobierno</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Riesgos de privacidad y seguridad por el uso no regulado de herramientas de IA en la organización.</p>
+</div>
+<div class="glass-card p-8 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="groups" data-weight="fill">groups</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Equipos Confundidos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Desalineación entre los equipos técnicos y de negocio sobre los objetivos de la IA.</p>
+</div>
+<div class="glass-card p-8 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="trending_down" data-weight="fill">trending_down</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cero ROI Claro</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inversiones significativas en tecnología sin un retorno de inversión medible o justificable.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="methodology">
+    <div class="max-w-container-max mx-auto">
+        <div class="text-center mb-16 max-w-3xl mx-auto">
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-6">El método del Chief AI Officer</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Seis pasos para transformar conocimiento en resultados.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-gutter">
+            <div class="space-y-6">
+                <div class="glass-card p-6 rounded-lg border-l-4 border-l-primary-container">
+                    <h4 class="font-button text-button text-primary-container mb-2">01 Claridad</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Define el problema correcto antes de tocar herramientas.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg border-l-4 border-l-primary-container">
+                    <h4 class="font-button text-button text-primary-container mb-2">02 Criterio</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Separa hechos, supuestos, inferencias y riesgos.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg border-l-4 border-l-primary-container">
+                    <h4 class="font-button text-button text-primary-container mb-2">03 Sistema</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Convierte prompts útiles en procesos repetibles.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg border-l-4 border-l-primary-container">
+                    <h4 class="font-button text-button text-primary-container mb-2">04 Cultura</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Lleva la IA del uso individual al aprendizaje colectivo.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg border-l-4 border-l-primary-container">
+                    <h4 class="font-button text-button text-primary-container mb-2">05 Escala</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Transforma conocimiento en activos y modelos de negocio.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg border-l-4 border-l-primary-container">
+                    <h4 class="font-button text-button text-primary-container mb-2">06 Gobernanza</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Avanza rápido sin perder confianza ni control.</p>
+                </div>
+            </div>
+            <div id="chapters" class="glass-card-premium p-8 rounded-xl h-fit">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-6">Capítulos del Libro</h3>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+                        <span class="font-body-sm text-on-surface"><span class="text-primary-container font-bold mr-3">01</span>La nueva frontera del liderazgo</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+                        <span class="font-body-sm text-on-surface"><span class="text-primary-container font-bold mr-3">02</span>El mapa estratégico de la IA</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+                        <span class="font-body-sm text-on-surface"><span class="text-primary-container font-bold mr-3">03</span>Productividad ejecutiva</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+                        <span class="font-body-sm text-on-surface"><span class="text-primary-container font-bold mr-3">04</span>Decisiones aumentadas</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+                        <span class="font-body-sm text-on-surface"><span class="text-primary-container font-bold mr-3">05</span>Innovación y modelos de negocio</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Author Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="autor">
+    <div class="max-w-container-max mx-auto glass-card-premium p-12 rounded-xl border border-primary-container/20">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 flex flex-col items-center">
+                <div class="w-48 h-48 rounded-full bg-surface-container-high border-2 border-primary-container mb-4 overflow-hidden flex items-center justify-center">
+                    <span class="material-symbols-outlined text-6xl text-primary-container">person</span>
+                </div>
+                <h3 class="font-headline-sm text-on-surface font-bold">Brian Pajares</h3>
+                <span class="text-primary-container font-body-sm uppercase tracking-widest mt-1">Autor</span>
+            </div>
+            <div class="md:col-span-2 space-y-4">
+                <div class="text-primary-container uppercase font-label-caps tracking-widest">Sobre el autor</div>
+                <p class="font-body-lg text-on-surface-variant">Ingeniero mecánico, ejecutivo de innovación y especialista en transformación digital y estrategia tecnológica. <b>Combina experiencia en proyectos, negocios, automatización e inteligencia artificial aplicada</b>.</p>
+                <p class="font-body-lg text-on-surface-variant">Este libro es la destilación de años llevando equipos y organizaciones a través de cambios reales.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lead Magnet Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-highest relative overflow-hidden" id="magnet">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-primary-container/20 via-background to-background -z-10"></div>
+    <div class="max-w-container-max mx-auto">
+        <div class="glass-card p-12 rounded-xl text-center max-w-3xl mx-auto border-t-2 border-primary-container shadow-2xl shadow-primary-container/10">
+            <div class="text-primary-container uppercase font-label-caps tracking-widest mb-4">Recurso Exclusivo</div>
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Descarga el primer capítulo gratis</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-8">Déjame tus datos y te enviaré de inmediato el PDF con el capítulo 1 y la plantilla de productividad.</p>
+            <form class="space-y-4 max-w-md mx-auto text-left">
+                <div>
+                    <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Nombre completo</label>
+                    <input type="text" class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Tu nombre" required>
+                </div>
+                <div>
+                    <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Email profesional</label>
+                    <input type="email" class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary" placeholder="tu@empresa.com" required>
+                </div>
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-primary-container text-on-primary-container font-button text-button py-4 rounded hover:scale-[1.02] transition-transform font-bold">
+                        Enviar material gratis →
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="faq">
+    <div class="max-w-container-max mx-auto max-w-4xl">
+        <div class="text-center mb-16">
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-6">Preguntas Frecuentes</h2>
+        </div>
+        <div class="space-y-4">
+            <details class="glass-card p-6 rounded-lg group cursor-pointer" open>
+                <summary class="font-headline-sm text-on-surface font-semibold list-none flex justify-between items-center">
+                    ¿Necesito conocimientos técnicos?
+                    <span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform">expand_more</span>
+                </summary>
+                <p class="mt-4 font-body-md text-on-surface-variant">No. La promesa del libro es clara: no necesitas convertirte en programador.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-highest" id="contacto">
+    <div class="max-w-container-max mx-auto">
+        <div class="text-center mb-16 max-w-3xl mx-auto">
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-6">¿Querés hablar con Brian?</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Dejá tus datos y te respondo personalmente.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-gutter">
+            <div class="glass-card p-8 rounded-lg space-y-8">
+                <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary-container text-4xl">mail</span>
+                    <div>
+                        <div class="font-label-caps text-on-surface-variant tracking-widest uppercase">Email</div>
+                        <div class="font-body-lg text-on-surface font-semibold">brian@brianpajares.com</div>
+                    </div>
+                </div>
+            </div>
+            <form class="glass-card p-8 rounded-lg space-y-4">
+                <input type="text" class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface" placeholder="Nombre completo" required>
+                <input type="email" class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface" placeholder="Email profesional" required>
+                <textarea class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface h-32" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                <button type="submit" class="w-full bg-primary-container text-on-primary-container font-button text-button py-4 rounded font-bold">
+                    Enviar mensaje →
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-amber-500/10 mt-32 bg-neutral-950 border-t border-neutral-900">
+<div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-amber-500 font-serif font-bold opacity-80 hover:opacity-100">
+                CHIEF AI OFFICER
+            </div>
+<div class="flex flex-wrap gap-6 justify-center">
+<a class="font-serif text-xs uppercase tracking-widest text-neutral-500 hover:text-amber-500 transition-colors" href="#">The Problem</a>
+<a class="font-serif text-xs uppercase tracking-widest text-neutral-500 hover:text-amber-500 transition-colors" href="#">Methodology</a>
+<a class="font-serif text-xs uppercase tracking-widest text-neutral-500 hover:text-amber-500 transition-colors" href="#">Chapters</a>
+<a class="font-serif text-xs uppercase tracking-widest text-neutral-500 hover:text-amber-500 transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="font-serif text-xs uppercase tracking-widest text-neutral-500">
+                © 2024 Chief AI Officer. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
