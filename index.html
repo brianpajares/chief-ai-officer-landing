@@ -364,24 +364,24 @@
                 <h2 class="section-title">¿Querés hablar con <span class="it">Brian</span>?</h2>
                 <p class="section-sub">Conferencias, consultoría o simplemente una pregunta. Dejá tus datos y te respondo personalmente.</p>
             </div>
-            <div class="contact-card" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px;">
-                <div class="contact-info" style="display: flex; flex-direction: column; gap: 24px;">
-                    <div style="display: flex; gap: 16px; align-items: center;">
-                        <div style="width: 40px; height: 40px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 50%; display: grid; place-items: center; color: var(--gold);">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </div>
                         <div>
-                            <div style="font-size: 11px; font-family: var(--mono); color: var(--ink-2); text-transform: uppercase;">Email</div>
-                            <div style="font-size: 15px; color: var(--ink-0);">brian@brianpajares.com</div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">brian@brianpajares.com</div>
                         </div>
                     </div>
                 </div>
-                <form id="contactForm" class="contact-form" style="display: flex; flex-direction: column; gap: 16px;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                        <input type="text" id="contactName" required placeholder="Nombre completo" style="background: var(--bg-2); border: 1px solid var(--line); padding: 14px; border-radius: 6px; color: #fff; width: 100%;" />
-                        <input type="email" id="contactEmail" required placeholder="Email profesional" style="background: var(--bg-2); border: 1px solid var(--line); padding: 14px; border-radius: 6px; color: #fff; width: 100%;" />
+                <form id="contactForm" class="contact-form">
+                    <div class="contact-form-grid">
+                        <input type="text" id="contactName" required placeholder="Nombre completo" />
+                        <input type="email" id="contactEmail" required placeholder="Email profesional" />
                     </div>
-                    <textarea id="contactMsg" required placeholder="¿En qué puedo ayudarte?" rows="4" style="background: var(--bg-2); border: 1px solid var(--line); padding: 14px; border-radius: 6px; color: #fff; width: 100%; resize: none;"></textarea>
+                    <textarea id="contactMsg" required placeholder="¿En qué puedo ayudarte?" rows="4"></textarea>
                     <button type="submit" id="contactSubmitBtn" class="btn-primary" style="width: 100%; justify-content: center">
                         Enviar mensaje →
                     </button>
@@ -392,18 +392,18 @@
     </section>
 
     <!-- FINAL CTA -->
-    <section class="final-cta" style="text-align: center; padding: 120px 0;">
+    <section class="final-cta">
         <div class="container">
-            <h2 style="font-family: var(--serif); font-size: 48px; margin-bottom: 24px;">El futuro no premiará a quienes acumulen herramientas.<br/><span class="gold" style="color: var(--gold); font-style: italic;">Premiará a quienes sepan integrarlas.</span></h2>
-            <p style="font-size: 18px; color: var(--ink-1); margin-bottom: 40px;">Empieza hoy. Tu próxima ventaja competitiva no se compra — se diseña.</p>
-            <button class="btn-primary" onclick="goAmazon()" style="font-size: 18px; padding: 22px 40px;">
+            <h2>El futuro no premiará a quienes acumulen herramientas.<br/><span class="accent-italic">Premiará a quienes sepan integrarlas.</span></h2>
+            <p>Empieza hoy. Tu próxima ventaja competitiva no se compra — se diseña.</p>
+            <button class="btn-primary" onclick="goAmazon()">
                 Comprar Chief AI Officer en Amazon
             </button>
         </div>
     </section>
 
-    <footer class="footer" style="padding: 40px 0; border-top: 1px solid var(--line);">
-        <div class="container" style="display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-3);">
+    <footer class="footer">
+        <div class="container footer-row">
             <span>© 2026 Brian Pajares · Todos los derechos reservados</span>
             <span>Chief AI Officer · Edición 2026</span>
         </div>
