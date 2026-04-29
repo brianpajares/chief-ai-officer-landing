@@ -1351,6 +1351,64 @@ details.faq p {
   .method-card { position: static; }
   .book-stage { min-height: 480px; }
 }
+
+/* ───────── Animations & Reveals ───────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal--active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  top: -50%; left: -50%; width: 200%; height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.6s;
+  pointer-events: none;
+}
+.btn-primary:hover::after {
+  left: 100%;
+}
+
+/* ───────── Scroll Indicator ───────── */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-2);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  animation: scrollFloat 2s infinite;
+  pointer-events: none;
+}
+.scroll-indicator .dot {
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+}
+@keyframes scrollFloat {
+  0%, 100% { opacity: 0.3; transform: translate(-50%, 0); }
+  50% { opacity: 0.8; transform: translate(-50%, 10px); }
+}
+
 @media (max-width: 600px) {
   .container { padding: 0 20px; }
   .pillars, .audience-grid, .testi-grid, .promise-grid { grid-template-columns: 1fr; }
@@ -1360,4 +1418,5 @@ details.faq p {
   section { padding: 70px 0; }
   .nav-cta { display: none; }
   .contact-form .form-row { grid-template-columns: 1fr; }
+  .scroll-indicator { display: none; }
 }
