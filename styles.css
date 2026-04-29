@@ -1,22 +1,24 @@
 /* CEO Aumentado — Landing */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 :root {
-  --bg-0: #050212;
-  --bg-1: #0C0626;
-  --bg-2: #160C3D;
-  --bg-3: #221557;
-  --line: rgba(139, 92, 246, 0.15);
-  --line-2: rgba(139, 92, 246, 0.25);
+  --bg-0: #040814;
+  --bg-1: #0A1128;
+  --bg-2: #121D3F;
+  --bg-3: #1C2B5A;
+  --line: rgba(0, 168, 225, 0.15);
+  --line-2: rgba(0, 168, 225, 0.25);
   --ink-0: #ffffff;
   --ink-1: #e2e8f0;
   --ink-2: #94a3b8;
   --ink-3: #475569;
-  --accent: #8b5cf6; /* Indigo */
-  --accent-2: #c4b5fd;
-  --accent-deep: #6d28d9;
-  --cyan: #06b6d4;
-  --cyan-glow: rgba(6, 182, 212, 0.5);
-  --serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --sans:  "Inter Tight", "Helvetica Neue", system-ui, sans-serif;
+  --accent: #FF9900; /* Amazon Orange */
+  --accent-2: #FFB84D;
+  --accent-deep: #CC7A00;
+  --cyan: #00A8E1; /* Alexa Blue */
+  --cyan-glow: rgba(0, 168, 225, 0.5);
+  --serif: "Space Grotesk", sans-serif;
+  --sans:  "Inter", system-ui, sans-serif;
   --mono:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -97,9 +99,9 @@ body::before {
 .nav-links { display: flex; gap: 28px; font-size: 13px; color: var(--ink-1); }
 .nav-links a:hover { color: var(--accent); }
 .nav-links a.btn-nav-secondary {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.05));
+  background: linear-gradient(135deg, rgba(0, 168, 225, 0.2), rgba(0, 168, 225, 0.05));
   color: var(--accent);
-  border: 1px solid rgba(139, 92, 246, 0.4);
+  border: 1px solid rgba(0, 168, 225, 0.4);
   padding: 8px 18px;
   border-radius: 8px;
   font-weight: 600;
@@ -113,7 +115,7 @@ body::before {
   background: var(--accent);
   color: #1a1300;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 168, 225, 0.3);
 }
 .nav-links a.btn-nav-outline {
   background: rgba(255, 255, 255, 0.03);
@@ -567,7 +569,7 @@ section + section { border-top: 1px solid var(--line); }
   text-align: center;
 }
 .lead-message.success {
-  background: rgba(139, 92, 246, 0.1);
+  background: rgba(0, 168, 225, 0.1);
   border: 1px solid var(--accent);
   color: #fff;
 }
@@ -918,7 +920,7 @@ details.faq p {
   inset: 0;
   border-radius: 16px;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), transparent 40%, transparent 60%, rgba(78, 195, 255, 0.2));
+  background: linear-gradient(135deg, rgba(0, 168, 225, 0.3), transparent 40%, transparent 60%, rgba(78, 195, 255, 0.2));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   pointer-events: none;
@@ -981,7 +983,7 @@ details.faq p {
 .lead-form select:focus {
   border-color: var(--accent);
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 168, 225, 0.1);
 }
 .lead-form select {
   appearance: none;
@@ -1247,7 +1249,7 @@ details.faq p {
 .final-cta {
   text-align: center;
   padding: 120px 0;
-  background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1), transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(0, 168, 225, 0.1), transparent 70%);
 }
 .final-cta h2 {
   font-family: var(--serif);
