@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   const { type, nombre, email, pais, empresa, telefono, mensaje, consentimiento, metadata } = req.body;
 
   const RESEND_API_KEY = 're_M6Rb1RA4_8GQGFv6bmW9x3BQQpTnU3nfb';
-  const OWNER_EMAIL = 'zonedigital89@gmail.com';
+  const OWNER_EMAIL = 'zonedigital@gmail.com';
   
   const SUPABASE_URL = 'https://guwmnpmyeynoywuhmyrd.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_gFWidTjbgCkuOpvAgF0cgg_x2Lgguu1';
